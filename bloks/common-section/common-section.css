@@ -1,0 +1,27 @@
+/*часто встречающиеся размеры и отступы выделим в отдельный миксовый класс*/
+.common-section {
+  max-width: 928px;
+  padding-bottom: 92px;
+  margin: 0 auto;
+}
+
+/*для больших экранов*/
+@media screen and (min-width: 1280px) {
+  .common-section {
+    max-width: 984px;
+  }
+}
+
+/*для планшетов*/
+@media screen and (max-width: 768px) {
+  .common-section {
+    padding-bottom: 88px;
+  }
+}
+
+/* для мобильных */
+@media screen and (max-width: 425px) {
+  .common-section {
+    padding-bottom: 64px;
+  }
+}

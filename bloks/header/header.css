@@ -1,0 +1,30 @@
+.header {
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 48px;
+  max-width: calc(100% - 96px);
+  display: flex;
+  justify-content: space-between;
+}
+
+/*для больших экранов*/
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-bottom: 56px;
+  }
+}
+
+/*для планшетов*/
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: calc(100% - 48px);
+  }
+}
+
+/* для мобильных */
+@media screen and (max-width: 425px) {
+  .header {
+    padding-top: 16px;
+    max-width: calc(100% - 32px);
+  }
+}

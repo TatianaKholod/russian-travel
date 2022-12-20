@@ -1,0 +1,35 @@
+.cover {
+  position: relative;
+  max-width: 1184px;
+  height: 740px;
+  margin: 0 auto 92px auto;
+}
+
+/*для больших экранов*/
+@media screen and (min-width: 1280px) {
+  .cover {
+    max-width: 1184px;
+  }
+}
+
+/*для ноутбуков*/
+@media screen and (max-width: 1024px) {
+  .cover {
+    max-width: 100vw;
+    height: calc(100vw * 0.625);
+  }
+}
+
+/*для планшетов*/
+@media screen and (max-width: 768px) {
+  .cover {
+    margin-bottom: 88px;
+  }
+}
+
+/* для мобильных */
+@media screen and (max-width: 425px) {
+  .cover {
+    margin-bottom: 64px;
+  }
+}

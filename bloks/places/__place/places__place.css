@@ -1,0 +1,27 @@
+.places__place {
+  display: grid;
+  grid-template-columns: 47% 49%;
+  gap: 48px 4%;
+  align-items: start;
+  padding-bottom: 80px;
+}
+
+.places__place:last-child {
+  padding-bottom: 0;
+}
+
+/*для планшетов*/
+@media screen and (max-width: 768px) {
+  .places__place {
+    padding-bottom: 72px;
+  }
+}
+
+/* для мобильных */
+@media screen and (max-width: 425px) {
+  .places__place {
+    grid-template-columns: 100%;
+    gap: 32px;
+    padding-bottom: 50px;
+  }
+}

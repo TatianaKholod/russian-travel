@@ -1,0 +1,19 @@
+.cover__title {
+  max-width: 560px;
+  margin: 0 0 32px 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  text-align: center;
+}
+
+/* заголовок в lead слишком велик уменьшим его раньше, чем для мобильных*/
+@media screen and (max-width: 720px) {
+  .cover__title {
+    font-size: 32px;
+    line-height: 1.09;
+    margin-bottom: 16px;
+    max-width: 288px;
+  }
+}

@@ -1,0 +1,14 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /*чтобы не прилипал к левому краю на разрешениях меньше common_section*/
+  max-width: min(95%, 928px);
+}
+
+/*для планшетов*/
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: 100%;
+  }
+}

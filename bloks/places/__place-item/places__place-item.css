@@ -1,0 +1,7 @@
+/* для мобильных */
+@media screen and (max-width: 425px) {
+  .places__place-item {
+    max-width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+}
