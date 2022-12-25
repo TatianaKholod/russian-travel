@@ -1,20 +1,10 @@
+/*для ограничения текста по ширине и выравниванию его влево нужен отдельный контейнер*/
 .intro__container {
   max-width: 690px;
 }
 
-/*для планшетов*/
 @media screen and (max-width: 768px) {
   .intro__container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-/* для мобильных */
-@media screen and (max-width: 425px) {
-  .intro__container {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
+    max-width: 720px;
   }
 }

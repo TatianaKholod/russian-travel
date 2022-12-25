@@ -1,7 +1,6 @@
 .footer {
-  max-width: calc(100% - 96px);
-  min-height: 18px;
-  margin: 0 auto;
+  margin-left: 48px;
+  margin-right: 48px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 24px;
@@ -10,16 +9,25 @@
 /*для планшетов*/
 @media screen and (max-width: 768px) {
   .footer {
-    max-width: calc(100% - 48px);
+    margin-left: 24px;
+    margin-right: 24px;
+
   }
 
 }
 
-/* для мобильных */
-@media screen and (max-width: 425px) {
+/*нужен промежуточный запрос, чтобы меню как можно дольше выводилось одной строкой*/
+@media screen and (max-width: 670px) {
   .footer {
-    max-width: calc(100% - 32px);
     flex-direction: column;
     gap: 48px;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }

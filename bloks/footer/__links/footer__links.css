@@ -5,18 +5,13 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.12;
 }
 
 /* для мобильных */
 @media screen and (max-width: 425px) {
   .footer__links {
     flex-direction: column;
-    gap: 32px;
-    font-size: 24px;
-    line-height: 1;
+    /*в макете 32px, а Perfect Pixel идеально на 30px*/
+    gap: 30px;
   }
 }

@@ -1,27 +1,19 @@
-/*часто встречающиеся размеры и отступы выделим в отдельный миксовый класс*/
+/*часто встречающиеся вертикальные отступы выделим в отдельный миксовый класс*/
+/*лучше будем использовать margin, т.к. padding влияет на высоту самого блока*/
 .common-section {
-  max-width: 928px;
-  padding-bottom: 92px;
-  margin: 0 auto;
-}
-
-/*для больших экранов*/
-@media screen and (min-width: 1280px) {
-  .common-section {
-    max-width: 984px;
-  }
+  margin: 0 auto 92px auto;
 }
 
 /*для планшетов*/
 @media screen and (max-width: 768px) {
   .common-section {
-    padding-bottom: 88px;
+    margin-bottom: 88px;
   }
 }
 
 /* для мобильных */
 @media screen and (max-width: 425px) {
   .common-section {
-    padding-bottom: 64px;
+    margin-bottom: 64px;
   }
 }

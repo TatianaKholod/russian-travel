@@ -1,3 +1,16 @@
-.places {
-  margin: 0 auto;
+.places{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+@media screen and (max-width: 768px) {
+.places{
+  gap: 72px;
+}
+}
+@media screen and (max-width: 630px) {
+  .places{
+    gap: 50px;
+  }
 }

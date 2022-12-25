@@ -7,11 +7,6 @@
   text-decoration-line: none;
 }
 
-.header__lang-link:lang(ru) {
-  text-decoration-line: underline;
-  text-underline-offset: 5px;
-}
-
 /* для мобильных */
 @media screen and (max-width: 425px) {
   .header__lang-link {

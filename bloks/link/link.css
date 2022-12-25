@@ -1,0 +1,11 @@
+.link {
+  color: #FFFFFF;
+  text-decoration-line: none;
+  cursor: auto;
+  transition: cursor 0.5s;
+}
+/*так и не вижу анимацию в макете, но пусть будет*/
+.link:hover {
+  cursor: url('../../images/pointer.png'), pointer;
+  transition: cursor 0.5s;
+}

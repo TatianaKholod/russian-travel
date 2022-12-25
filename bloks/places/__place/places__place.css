@@ -1,27 +1,45 @@
 .places__place {
+  box-sizing: border-box;
+  max-width: min(984px, calc(100% - 96px));
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 47% 49%;
-  gap: 48px 4%;
-  align-items: start;
-  padding-bottom: 80px;
+  grid-template-columns: 460px 1fr;
+  row-gap: 48px;
+  column-gap: 40px;
+  /*Попробуем areas, хотя здесь не очень они полезны, т.к. последовательность блоков сохраняется на разных ширинах*/
+  grid-template-areas:
+    "title website"
+    "image text";
+  align-content: start;
 }
 
-.places__place:last-child {
-  padding-bottom: 0;
+/*для планшетов*/
+@media screen and (max-width: 1024px) {
+  .places__place {
+    grid-template-columns: 440px 1fr;
+    column-gap: 32px;
+  }
 }
 
 /*для планшетов*/
 @media screen and (max-width: 768px) {
   .places__place {
-    padding-bottom: 72px;
+    max-width: 100%;
+    grid-template-columns: 340px 1fr;
+    column-gap: 28px;
+    margin: 0 24px;
   }
 }
 
-/* для мобильных */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 630px) {
   .places__place {
     grid-template-columns: 100%;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "text";
     gap: 32px;
-    padding-bottom: 50px;
+    margin: 0;
   }
 }

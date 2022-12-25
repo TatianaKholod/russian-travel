@@ -2,13 +2,28 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  /*чтобы не прилипал к левому краю на разрешениях меньше common_section*/
-  max-width: min(95%, 928px);
+  max-width: min(984px, calc(100% - 96px));
 }
 
-/*для планшетов*/
+@media screen and (max-width: 1024px) {
+  .intro {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .intro {
     max-width: 100%;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+}
+
+/* для мобильных */
+@media screen and (max-width: 460px) {
+  .intro {
+    margin-right: 16px;
+    margin-left: 16px;
   }
 }

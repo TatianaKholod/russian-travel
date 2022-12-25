@@ -1,16 +1,20 @@
 .places__paragraph-container {
+  grid-area: text;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.63;
+  gap: 27px;
 }
 
 /*для планшетов*/
 @media screen and (max-width: 768px) {
   .places__paragraph-container {
-    font-size: 16px;
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .places__paragraph-container {
+    margin-right: 16px;
+    margin-left: 16px;
   }
 }
