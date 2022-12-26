@@ -9,7 +9,7 @@
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 630px) {
   .places__url-heading {
     line-height: 1;
   }

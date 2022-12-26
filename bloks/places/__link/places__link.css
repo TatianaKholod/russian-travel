@@ -6,4 +6,14 @@
   text-decoration-line: underline;
   color: #FFFFFF;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*для длинных ссылок ограничим ширину, чтобы скрывались, когда фракция станет узкой*/
+@media screen and (max-width: 650px) {
+  .places__link {
+    max-width: 190px;
+  }
 }
